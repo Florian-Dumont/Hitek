@@ -1,0 +1,431 @@
+/* ******
+VARIABLES
+****** */
+/* ******
+MIXIN
+****** */
+/* ******
+BOUCLES
+****** */
+.col-2 > * {
+  width: 45%;
+}
+
+.col-3 > * {
+  width: 28.3333333333%;
+}
+
+.col-4 > * {
+  width: 20%;
+}
+
+.col-5 > * {
+  width: 15%;
+}
+
+/* ******
+LAYOUT
+****** */
+.header {
+  background: url("./header.jpg");
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+.header div {
+  display: flex;
+  align-items: center;
+}
+.header div .header_title-1 {
+  color: white;
+  font-size: 1.87em;
+}
+.header div .icone_text {
+  display: block;
+  color: white;
+}
+.header div .search_bar {
+  margin-left: 5px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  background-color: #4CD1EA;
+}
+.header div .search_bar #search {
+  border-radius: 30px;
+  background-color: #4CD1EA;
+  padding: 1em;
+  border: none;
+}
+.header div .search_bar .pannel .client .fa-regular {
+  color: white;
+}
+.header .center {
+  justify-content: space-around;
+}
+.header .enseigne {
+  margin: 2px;
+}
+.header .pannel {
+  margin-left: 100px;
+}
+.header .pannel .client {
+  display: block;
+  color: white;
+}
+.header .pannel .shop {
+  margin-left: 20px;
+  display: block;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.fa-user {
+  text-align: center;
+  width: 75px;
+}
+
+.fa-cart-arrow-down {
+  text-align: center;
+  width: 75px;
+}
+
+.container {
+  position: relative;
+  top: -20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* On donne une largeur au container */
+  max-width: 1056px;
+  /* On centre son contenu */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Logo AOC*/
+.logoAoc span {
+  margin-left: 25px;
+}
+
+.logoAoc {
+  margin-top: 20px;
+}
+
+/*Card Prix*/
+.container .presentation .block_prix {
+  position: relative;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.card {
+  position: relative;
+  left: 60%;
+  background-color: #ebebeb;
+  width: 40%;
+  height: 250px;
+  font-size: 18px;
+}
+
+.garantie {
+  position: absolute;
+  background-color: #cfcfcf;
+  width: 100%;
+  height: 80px;
+  bottom: 0;
+  text-align: center;
+}
+
+.garantie p {
+  padding-top: 6px;
+  justify-content: center;
+}
+
+.price {
+  position: absolute;
+  background-color: #ebebeb;
+  top: 7%;
+  left: 7%;
+}
+
+.price .prix {
+  position: relative;
+  left: 35%;
+  font-size: 2em;
+}
+
+.add {
+  position: absolute;
+  background-color: #1081b1;
+  right: 0;
+  top: 14%;
+  height: 120px;
+}
+
+.addBasket {
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  color: #fff;
+  line-height: 35px;
+}
+
+.addWish {
+  background-color: white;
+  margin-top: 5px;
+  height: 40px;
+  text-align: center;
+  line-height: 35px;
+  color: #1081b1;
+}
+
+.ecoparticipation {
+  font-size: 0.5em;
+  position: relative;
+  left: 40%;
+}
+
+/****************************************
+                cards presentation
+**************************************************/
+.presentation {
+  width: 100%;
+}
+
+.presentation .carousel .mains_screen {
+  width: 600px;
+  height: 600px;
+  display: block;
+  margin-right: 50px;
+  font-size: 0.5em;
+}
+
+.presentation .carousel {
+  position: relative;
+  top: -50px;
+  float: left;
+  align-items: center;
+  text-align: center;
+}
+.presentation .carousel p {
+  margin: 0;
+  font-size: 0.5em;
+}
+
+.presentation .carousel .carouselbottom {
+  display: inline;
+  position: relative;
+}
+
+/************************
+        description ecran
+        *****************************************/
+.description_ecran {
+  margin-top: 30px;
+}
+
+.description_ecran ul {
+  position: relative;
+  left: 30px;
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 0.8em;
+}
+
+.carousel .carouselbottom a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.fancybox img {
+  width: 50px;
+  height: 50px;
+}
+
+/***************************************************************************
+                    Article descriptifs
+***************************************************************************/
+.desc h2 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.desc div {
+  padding: 40px;
+}
+
+.right {
+  text-align: right;
+  border-top: 7px dotted rgba(0, 0, 0, 0.1);
+  width: 48%;
+  float: right;
+  margin-left: 4%;
+}
+
+.right img {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+
+.left {
+  float: left;
+  display: flex;
+  text-align: left;
+  border-top: 7px dotted rgba(0, 0, 0, 0.1);
+  height: 300px;
+  width: 400px;
+}
+
+.left img {
+  position: relative;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+}
+
+/* ******
+PAGE
+****** */
+.menu-haut {
+  list-style-type: none;
+  display: flex;
+  padding: 0.5%;
+  margin: 2% 5%;
+  justify-content: space-between;
+  position: relative;
+  bottom: -20px;
+  background-color: #e2f7ff;
+  z-index: 2;
+}
+.menu-haut li {
+  margin: 1%;
+}
+.menu-haut li a {
+  text-decoration: none;
+  font-size: 0.9em;
+  color: blue;
+}
+.fil-arianne ul {
+  list-style: none;
+  padding: 2% 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.fil-arianne ul li {
+  margin: 2%;
+}
+.fil-arianne ul li a {
+  text-decoration: none;
+}
+
+.sous-menu {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.sous-menu article .products-details {
+  list-style: none;
+  padding: 0;
+}
+.sous-menu article .products-details .products-items {
+  margin: 2%;
+}
+.sous-menu article .products-details .products-items a {
+  text-decoration: none;
+  color: blue;
+}
+
+#sous-menu-portables,
+#sous-menu-peripheriques,
+#sous-menu-telephones,
+#sous-menu-connectes {
+  position: absolute;
+  z-index: -100;
+  opacity: 0;
+  background-color: #fff;
+  height: 0;
+  overflow: hidden;
+}
+
+.menu-haut li .menu-ordinateurs:hover + #sous-menu-portables,
+#sous-menu-portables:hover {
+  opacity: 1;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  height: auto;
+}
+
+.menu-haut li .menu-peripheriques:hover + #sous-menu-peripheriques,
+#sous-menu-peripheriques:hover {
+  opacity: 1;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  height: auto;
+}
+
+.menu-haut li .menu-telephones:hover + #sous-menu-telephones,
+#sous-menu-telephones:hover {
+  opacity: 1;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  height: auto;
+}
+
+.menu-haut li .menu-connectes:hover + #sous-menu-connectes,
+#sous-menu-connectes:hover {
+  opacity: 1;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  height: auto;
+}
+
+/***************
+TABLEAU
+**************/
+.table-carac {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2% 0;
+}
+.table-carac h2 {
+  line-height: 50%;
+}
+
+table {
+  border-collapse: collapse;
+  border: 3px solid lightgrey;
+  width: 70%;
+}
+table tr {
+  color: grey;
+  border: 1px solid lightgrey;
+  line-height: 2rem;
+}
+table tr td {
+  width: 50%;
+  text-align: left;
+  padding-left: 1%;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

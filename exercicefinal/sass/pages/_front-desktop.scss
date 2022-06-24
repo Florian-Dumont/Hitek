@@ -1,0 +1,105 @@
+.menu-haut{
+    list-style-type: none;
+    display: flex;
+    padding: 0.5%;
+    margin: 2% 5%;
+    justify-content:space-between;
+    position:relative;
+    bottom:-20px;
+    background-color: #e2f7ff; 
+    z-index:2;
+            li{
+                 margin: 1%;
+                a{
+                    text-decoration: none;
+                    font-size:0.9em;
+                    color:blue;
+                }
+                span{
+                }
+            }
+}
+
+.fil-arianne{
+    ul{
+    list-style:none;
+    padding: 2% 0;
+    display: flex;
+    justify-content:flex-start;
+            li{
+                margin:2%;
+                a{
+                    text-decoration: none;
+                };
+            };
+            
+    };
+};
+
+
+.sous-menu {
+    display:flex;
+    flex-wrap:nowrap;
+        article {
+                    .products-details{
+                           list-style:none;
+                           padding:0;
+                        .products-items{
+                margin:2%;
+                            a{
+                    text-decoration: none;
+                    color:blue;
+                            };
+                            };
+                        };
+                };
+            }
+            
+            
+            
+#sous-menu-portables,
+#sous-menu-peripheriques,
+#sous-menu-telephones,
+#sous-menu-connectes{
+    position: absolute;
+    z-index:-100;
+    opacity:0;
+    background-color: #fff;
+    // border: 1px solid black;
+    height:0;
+    overflow:hidden;
+}       
+
+
+.menu-haut li .menu-ordinateurs:hover + #sous-menu-portables,
+#sous-menu-portables:hover{
+    opacity:1;
+    z-index:3;
+    left:0;
+    right:0;
+    height:auto;
+}
+.menu-haut li .menu-peripheriques:hover + #sous-menu-peripheriques,
+#sous-menu-peripheriques:hover{
+    opacity:1;
+    z-index:2;
+    left:0;
+    right:0;
+    height:auto;
+}
+.menu-haut li .menu-telephones:hover + #sous-menu-telephones,
+#sous-menu-telephones:hover{
+    opacity:1;
+    z-index:2;
+    left:0;
+    right:0;
+    height:auto;
+}
+.menu-haut li .menu-connectes:hover + #sous-menu-connectes,
+#sous-menu-connectes:hover{
+    opacity:1;
+    z-index:2;
+    left:0;
+    right:0;
+    height:auto;
+}

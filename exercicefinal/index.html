@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exo FINAL - MODULE 5</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/c72217183e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link  href="/path/to/jquery.fancybox.min.css" rel="stylesheet">
+<script src="/path/to/jquery.fancybox.min.js"></script>
+</head>
+<body>
+    <header class="header">
+                <div class="center">
+                        <div class="enseigne">
+                   <!-- SVG  image triangle orange -->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_1" width="102" height="77">
+        
+                        <g transform="matrix(0.39827594 0 0 0.39827594 6.620672 -0)">
+                        	<g>
+                                <path d="M111.4286 0.3333L0 193.3333L222.8572 193.3333L111.4286 0.3333" stroke="none" fill="#FFA243" fill-rule="nonzero" />
+                        	</g>
+                        	<g>
+                                <path d="M111.4286 0L78.4286 124L222.4286 193L111.4286 0" stroke="none" fill="#F05501" fill-rule="nonzero" />
+                        	</g>
+                        	<g>
+                                <path d="M78.4286 124L0.4286 193L222.4286 193L78.4286 124" stroke="none" fill="#F47B00" fill-rule="nonzero" />
+                        	</g>
+                        	<g>
+                                <path d="M111.4286 0L118.4286 108L222.4286 193L111.4286 0" stroke="none" fill="#E22000" fill-rule="nonzero" />
+                        	</g>
+                        </g>
+                        </svg>
+                        
+                        <div class="icone_text">
+                        <!-- Titre du header a coté de l'image -->
+                                <h1 class="header_title-1">HiTech.NET</h1>
+                                
+                        <!-- Text sous le titre du titre du header -->
+                                <p class="header_undertitle-1">Tout le matériel Hight-Tech</p>
+                        </div>
+                        </div>
+                        
+                        <!-- Icone loupe a placer dans le placeholder de recherche -->       
+                        <div class="search_bar">
+                                <label for="recherche_header"></label>
+                                <input type="text" name="recherche_header" id="search" placeholder="Chercher un produit, une marques... >>> Tout les rayons ..." size="50" />
+                                <div class="icone_loupe_placeholder"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        </div>
+                        
+                        <div class="pannel"><!--METTRE LES DIV EN A LORS DE L'IMBRICATION PHP-->
+                        <!--Icone mon compte + notation mon compte -->        
+                                <div class="client">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>Mon compte</p>
+                                </div>
+                        <!--Icone panier + notation mon panier -->        
+                                <div class="shop">
+                                        <i class="fa-solid fa-cart-arrow-down"></i>
+                                        <p>Mon panier</p>
+                                </div>
+                        </div>
+                </div>
+                <nav class="nav-menu-haut">
+    <ul class="menu-haut">
+        <li>
+            <a href="#" class="products-categories menu-ordinateurs"><span class="icon-display"></span>Ordinateurs</a>
+            <!-- SOUS MENU INVISIBLE A AJOUTER-->
+            <div class="sous-menu col-3" id="sous-menu-portables">
+    <article>
+            <ul class="products-details"><h3 class="title3">Portables</h3>
+                    <li class="products-items"><a href="#">PC Portable</a></li>
+                    <li class="products-items"><a href="#">Macbook</a></li>
+                    <li class="products-items"><a href="#">Extension mémoire</a></li>
+                    <li class="products-items"><a href="#">Disque dur 2"1/2</a></li>
+                    <li class="products-items"><a href="#">Sacs & sacoches</a></li>
+                    <li class="products-items"><a href="#">Refroidisseur</a></li>
+                    <li class="products-items"><a href="#">Station d'accueil</a></li>
+                    <li class="products-items"><a href="#">Chargeur</a></li>
+                    <li class="products-items"><a href="#">Garantie</a></li>
+                    <li class="products-items"><a href="#">Batterie</a></li>
+            </ul>
+    </article>
+    <article>
+            <ul class="products-details"><h3 class="title3">Fixes</h3>
+                    <li class="products-items"><a href="#">Ordinateur PC fixe</a></li>
+                    <li class="products-items"><a href="#">Ordinateur Apple</a></li>
+                    <li class="products-items"><a href="#">Barebone</a></li>
+            </ul>
+    </article>
+    <article>
+            <ul class="products-details"><h3 class="title3">Tablettes</h3>
+                    <li class="products-items"><a href="#">Tablette</a></li>
+                    <li class="products-items"><a href="#">iPad</a></li>
+            </ul>
+    </article>
+    </div>
+        </li>
+                
+        <li>
+            <a href="#" class="products-categories menu-peripheriques"><span class="icon-data"></span>Périphériques & Composants</a>
+            <!-- SOUS MENU INVISIBLE A AJOUTER-->
+            <div class="sous-menu col-4" id="sous-menu-peripheriques">
+                <article>
+                    <ul class="products-details"><h3 class="title3">Périphériques</h3>
+                        <li class="products-items"><a href="#">Écran PC</a></li>
+                        <li class="products-items"><a href="#">Clavier/souris</a></li>
+                        <li class="products-items"><a href="#">Imprimante</a></li>
+                        <li class="products-items"><a href="#">Clef USB</a></li>
+                        <li class="products-items"><a href="#">Disque dur externe</a></li>
+                        <li class="products-items"><a href="#">Onduleur</a></li>
+                        <li class="products-items"><a href="#">Enceinte PC</a></li>
+                        <li class="products-items"><a href="#">Casque audio</a></li>
+                        <li class="products-items"><a href="#">Casque VR</a></li>
+                        <li class="products-items"><a href="#">Musique pro</a></li>
+                        <li class="products-items"><a href="#">Tablette graphique</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <ul class="products-details"><h3 class="title3">Boitier</h3>
+                        <li class="products-items"><a href="#">Alimentation</a></li>
+                        <li class="products-items"><a href="#">Disque dur</a></li>
+                        <li class="products-items"><a href="#">Disque SSD</a></li>
+                        <li class="products-items"><a href="#">Carte mère</a></li>
+                        <li class="products-items"><a href="#">Carte graphique</a></li>
+                        <li class="products-items"><a href="#">Mémoire PC</a></li>
+                        <li class="products-items"><a href="#">Processeur</a></li>
+                        <li class="products-items"><a href="#">Refroidissement</a></li>
+                        <li class="products-items"><a href="#">Kit upgrade PC</a></li>
+                        <li class="products-items"><a href="#">Batterie PC portable</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <ul class="products-details"><h3 class="title3">Imprimante</h3>
+                        <li class="products-items"><a href="#">Cartouche</a></li>
+                        <li class="products-items"><a href="#">Toner</a></li>
+                        <li class="products-items"><a href="#">Ruban</a></li>
+                        <li class="products-items"><a href="#">Papier</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <ul class="products-details"><h3 class="title3">Connectique</h3>
+                        <li class="products-items"><a href="#">Câbles PC</a></li>
+                        <li class="products-items"><a href="#">Adaptateurs PC</a></li>
+                        <li class="products-items"><a href="#">Parafoudre</a></li>
+                        <li class="products-items"><a href="#">Multiprise</a></li>
+                        <li class="products-items"><a href="#">Câble secteur</a></li>
+                        <li class="products-items"><a href="#">Câble HDMI</a></li>
+                        <li class="products-items"><a href="#">Switch HDMI</a></li>
+                        <li class="products-items"><a href="#">Adaptateur HDMI</a></li>
+                        <li class="products-items"><a href="#">Câble RJ45</a></li>
+                        <li class="products-items"><a href="#">Connectique RJ45</a></li>
+                        <li class="products-items"><a href="#">Câble RJ11/RJ12</a></li>
+                        <li class="products-items"><a href="#">Câble audio numérique</a></li>
+                        <li class="products-items"><a href="#">Câble audiophile</a></li>
+                        <li class="products-items"><a href="#">Adaptateur Audio</a></li>
+                        <li class="products-items"><a href="#">Câble audio Jack</a></li>
+                    </ul>
+                </article>
+                </div>
+        </li> 
+
+        <li>
+            <a href="#" class="products-categories menu-telephones"><span class="icon-phone"></span>Téléphone</a>
+            <!-- SOUS MENU INVISIBLE A AJOUTER--> 
+                        <div class="sous-menu col-2" id="sous-menu-telephones">
+                <article>
+                <ul class="products-details"><h3 class="title3">Mobile</h3>
+                    <li class="products-items"><a href="#">Mobile & smartphone</a></li>
+                </ul>
+                </article>
+                <article>
+                <ul class="products-details"><h3 class="title3">Accessoires</h3>
+                    <li class="products-items"><a href="#">Carte mémoire</a></li>
+                    <li class="products-items"><a href="#">Étuis</a></li>
+                    <li class="products-items"><a href="#">Kit piéton/casque</a></li>
+                    <li class="products-items"><a href="#">Batterie</a></li>
+                    <li class="products-items"><a href="#">Accessoires iPhone</a></li>
+                    <li class="products-items"><a href="#">Chargeur</a></li>
+                    <li class="products-items"><a href="#">Câble & adaptateur</a></li>
+                    <li class="products-items"><a href="#">Station d'accueil</a></li>
+                    <li class="products-items"><a href="#">Pile & chargeur</a></li>
+                    <li class="products-items"><a href="#">Batterie téléphone</a></li>
+                </ul>
+                </article>
+            </div>
+        </li>
+        
+        <li>
+            <a href="#" class="products-categories menu-connectes"><span class="icon-clock"></span>Objets connectés</a>
+            <!-- SOUS MENU INVISIBLE A AJOUTER-->    
+                        <div class="sous-menu col-3" id="sous-menu-connectes">
+            <article>
+                <ul class="products-details"><h3 class="title3">Maison</h3>
+                        <li class="products-items"><a href="#">Caméra de surveillance</a></li>
+                        <li class="products-items"><a href="#">Détecteur & capteur</a></li>
+                        <li class="products-items"><a href="#">Kit alarme</a></li>
+                        <li class="products-items"><a href="#">Centrale multifonction</a></li>
+                        <li class="products-items"><a href="#">Enregistrement vidéo</a></li>
+                        <li class="products-items"><a href="#">Stations météo</a></li>
+                        <li class="products-items"><a href="#">Ampoule connectée</a></li>
+                        <li class="products-items"><a href="#">Enceinte connectée</a></li>
+                    </ul>
+            </article>
+            <article>
+                    <ul class="products-details"><h3 class="title3">Loisirs</h3>
+                        <li class="products-items"><a href="#">Drone</a></li>
+                        <li class="products-items"><a href="#">Gyropode</a></li>
+                        <li class="products-items"><a href="#">Accessoire drone</a></li>
+                        <li class="products-items"><a href="#">Montre connectée</a></li>
+                    </ul>
+            </article>
+            <article>
+                    <ul class="products-details"><h3 class="title3">Sport</h3>
+                        <li class="products-items"><a href="#">Montre running</a></li>
+                        <li class="products-items"><a href="#">Bracelet connecté</a></li>
+                    </ul>
+            </article>
+            </div>
+        </li>        
+    </ul>
+    
+    
+</nav>
+
+   </header>
+        
+    
+    <main class="container">
+        <nav class="fil-arianne">
+    <ul>
+        <li>
+            <a href="#"<span class="icon-shop"></span>Accueil</a>
+        </li>
+        <li>
+            <a href="#"><span class="icon-data"></span> >    Périphériques & composants</a>
+        </li>
+        <li>
+            <a href="#">>    Ecrans d'ordinateur</a>
+        </li>
+        <li>
+            <a href="#">>    AOC 24B1XH4S</a>
+        </li>
+    </ul>
+</nav>
+
+<h2 class="title2">AOC 24B1XH4S</h2>
+
+<h2 class="title2">Présentation</h2>
+        <!--test caroussel -->
+        <div class="presentation">
+            <div class="carousel">
+                <img class="mains_screen" src="./ressources/images/product-1/slide-1-md.jpg" alt="">
+                <div class="carouselbottom gallery">
+                        <p>Photo non contractueles</p>
+                        <a class="fancybox" data-fancybox="gallery" href="./ressources/images/product-1/slide-1-lg.jpg">
+                            <img src="./ressources/images/product-1/slide-1-md.jpg">
+                        </a>
+                        <a class="fancybox" data-fancybox="gallery" href="./ressources/images/product-1/slide-2-lg.jpg">
+                            <img src="./ressources/images/product-1/slide-2-md.jpg">
+                        </a>
+                        <a class="fancybox" data-fancybox="gallery" href="./ressources/images/product-1/slide-3-lg.jpg">
+                            <img src="./ressources/images/product-1/slide-3-md.jpg">
+                        </a>
+                        <a class="fancybox" data-fancybox="gallery" href="./ressources/images/product-1/slide-4-lg.jpg">
+                            <img src="./ressources/images/product-1/slide-4-md.jpg">
+                        </a>
+                        <a class="fancybox" data-fancybox="gallery" href="./ressources/images/product-1/slide-5-lg.jpg">
+                            <img src="./ressources/images/product-1/slide-5-md.jpg">
+                        </a>
+                </div>
+                
+            </div>
+        
+            <div class="block_prix">
+                <div class="logoAoc"><img src="./ressources/images/brand-1/logo-sm.png" alt="Logo AOC"><span>Marque: AOC</span></div>
+                <div class="card">
+                    <div class="garantie">
+                        <p>Garantie: 2 années vendeur</p>
+                    </div>
+                    <div class="price">
+                        <p class="prix"><strong>109€94</strong></p>
+                        <p class="ecoparticipation">dont éco-participation 1€75</p>
+                    </div>
+                    <div class="add">
+                            <div class="addBasket">Ajouter au panier</div>
+        
+                            <div class="addWish">Ajouter a ma liste de souhait</div>
+                    </div>
+                </div>
+                <div class="description_ecran">
+                    <p>Un écran 23,8" Full HD et sans bords; c'est sûrement votre futur moniteur pour la maison ou le bureau. AOC vous propose le 24B1XHS, un produit élégant au look doté d'une dalle VA avec un temps de réponse rapide de 7 ms en résolution 1920 x 1080 pixels. Cet écran WLED très fonctionnel offre un contenu avec un fréquence de 60 Hz, idéal pour tous les usages du quotidien.</p>
+                <ul>
+                    <li>- Écran large de 23.8" avec résolution Full HD (1920 x 1080)</li>
+                    <li>- Des couleurs riches et nuancées avec un contraste dynamique de 20.000.000:1 (typique 1000:1)</li>
+                    <li>- Temps de réponse de 7 ms</li>
+                    <li>- Dalle IPS</li>
+                    <li>- Luminosité 250 cd/m²</li>
+                    <li>- Modes Flicker-Free et Anti-lumière bleue (Low blue mode)</li>
+                    <li>- Connecteurs : HDMI 1.4, VGA </li>
+                    <li>- Design sans contour & profil plat </li>
+                    <li>- Consommation d'énergie modeste : 25 Watts </li>
+                    <li>- Dimensions (avec support) : 419.8 x 540.1 x 186.8 mm</li>
+                    <li>- Poids : 2.48 kg</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <article class="desc">
+            
+
+            <div>
+                <h2>Descriptif</h2>
+                <div class="right clearfix">
+                    <img src="./ressources/images/product-1/screen.png" alt="Taille de l'écan">
+                </div>
+                <h3>Un moniteur Full HD performant et tout en finesse</h3>
+                <p>Issu de la série B1, le moniteur AOC 24B1XHS dispose de tous les atouts indispensables pour offrir une expérience utilisateur agréable. Son écran Full HD de 23.8" s'accompagne d'une dalle IPS ainsi que d'un temps de réponse de 7 ms pour une image toujours performante. Aussi, le 24B1XHS séduit par son profil plat et son design sans contour qui favorise le plaisir visuel et l'immersion. Ce moniteur WLED trouvera facilement une place de choix sur votre bureau pour toutes vos utilisations quotidiennes.</p>
+            </div>
+
+            <div>
+                <div class="left">
+                    <img src="./ressources/images/product-1/desc-1.jpg" alt="triple ecran AOC">
+                </div>
+                <h3>Appréciez le design sans contour</h3>
+                <div>
+                    <p>En plus du look moderne et attrayant qu'il procure, le design sans contour permet des configurations à plusieurs écrans sans interruption. Votre curseur, vos fenêtres ne sont plus perdus dans les abysses sombres des contours lorsque plusieurs écrans sont placés les uns à côté des autres.</p>
+                    <p>Le profil plat de ce moniteur AOC offre de nombreux avantages. Très élégant sous tous les angles, il devient un choix idéal dans les espaces publics. Sa finesse et sa conception moderne lui permettent d'occuper moins de place sur le bureau.</p>
+                </div>               
+            </div>
+            <div>
+                <div class="right">
+                    <img src="./ressources/images/product-1/desc-2.jpg" alt="Ecran avec couleurs"></img>
+                </div>
+                <h3>Tout le confort nécessaire</h3>
+                <p>Agréable visuellement et intuitif, ce moniteur dispose également d'une dalle IPS. Cette dernière reproduit des couleurs éclatantes et offre de très larges angles de vue. De cette façon, les images gardent toujours un excellent aspect et une parfaite précision, quel que soit l'angle auquel vous regardez l'écran. </p>
+                <p>Vous voulez utiliser votre écran même dans un environnement très lumineux, à côté d'une fenêtre au soleil par exemple ? La haute luminosité de 250 cd/m² garantit une bonne visibilité, même dans des conditions difficiles.</p>
+            </div>
+        </article>
+        
+        <div class="clearfix">
+        </div>
+        
+        <!-- TABLEAU -->
+        
+        <h2>Caractéristiques techniques</h2>
+        <div class="table-carac">
+            <h3>
+                Affichage
+            </h3>
+            <table>
+					<tr>
+					    <td>Taille de l'écran</td>
+					    <td>23.8 pouces</td>
+					</tr>
+					<tr>
+					    <td>Format de l'écran</td>
+					    <td>16/9</td>
+					</tr>
+					<tr>
+					    <td>Type de Dalle</td>
+					    <td>Dalle IPS</td>
+					</tr>
+					<tr>
+					    <td>Technologie LCD</td>
+					    <td>IPS</td>
+					</tr>
+					<tr>
+					    <td>Résolution Max</td>
+					    <td>1920 x 1080 pixels</td>
+					</tr>
+					<tr>
+					    <td>Dot Pitch</td>
+					    <td>0.2745 mm</td>
+					</tr>
+					<tr>
+					    <td>Luminosité</td>
+					    <td>250 cd/m²</td>
+					</tr>
+					<tr>
+					    <td>Contraste</td>
+					    <td>20000000 /1</td>
+					</tr>
+					<tr>
+					    <td>Temps de réponse</td>
+					    <td>7 ms</td>
+					</tr>
+					<tr>
+					    <td>Angle de vision (horizontal)</td>
+					    <td>178 Degré(s)</td>
+					</tr>
+					<tr>
+					    <td>Angle de vision (vertical)</td>
+					    <td>178 Degré(s)</td>
+					</tr>
+					<tr>
+					    <td>Dalle mate/antireflets</td>
+					    <td>Oui</td>
+					</tr>
+					<tr>
+					    <td>NVIDIA G-SYNC</td>
+					    <td>Non</td>
+					</tr>
+					<tr>
+					    <td>Adaptive-Sync</td>
+					    <td>Non</td>
+					</tr>
+					<tr>
+					    <td>AMD FreeSync</td>
+					    <td>Non</td>
+					</tr>
+					<tr>
+					    <td>Flicker-Free</td>
+					    <td>Oui</td>
+					</tr>
+					<tr>
+					    <td>Anti-lumière bleue</td>
+					    <td>Oui</td>
+					</tr>
+                
+            </table>
+        </div>
+            
+            <div class="table-carac">
+            <h3>
+                Ecran
+            </h3>
+            <table>
+				    <tr>
+				        <td>Type d'écran</td>
+				        <td>LED</td>
+				    </tr>
+					<tr>
+					    <td>Ecran large</td>
+					    <td>Oui</td></tr>
+					<tr>
+					    <td>Ecran incurvé</td>
+					    <td>Non</td>
+					</tr>
+					<tr>
+					    <td>Borderless</td>
+					    <td>Oui</td>
+					</tr>
+					<tr>
+					    <td>Compatible 3D</td>
+					    <td>Non</td>
+					</tr>
+					<tr>
+					    <td>Ecran tactile</td>
+					    <td>Non</td>
+					</tr>
+					<tr>
+					    <td>Fréquence verticale mini</td>
+					    <td>60 Hz</td>
+					</tr>
+					<tr>
+					    <td>Type d'activités</td>
+					    <td>Bureautique</td>
+					</tr>
+            </table>
+            </div>
+            
+            <div class="table-carac">
+            <h3>
+                Ergonomie
+            </h3>
+            <table>
+					<tr>
+					    <td>Pivot</td>
+					    <td>Non</td>
+					</tr>
+					<tr>
+					    <td>Pied réglable en hauteur</td>
+					    <td>Non</td>
+					</tr>
+					<tr>
+					    <td>Pied amovible</td>
+					    <td>Oui</td>
+					</tr>
+					<tr>
+					    <td>Fixation VESA</td>
+					    <td>N/A</td>
+					</tr>
+					<tr>
+					    <td>Angle inclinaison vers l'arrière (haut)</td>
+					    <td>21.5 Degré(s)</td>
+					</tr>
+					<tr>
+					    <td>Angle inclinaison vers l'avant (bas)</td>
+					    <td>3.5 Deg</td>
+					</tr>
+            </table>
+            </div>
+            
+            <div class="table-carac">
+            <h3>
+                Connectique
+            </h3>
+            <table>
+					<tr>
+						<td>Entrées vidéo</td>
+						<td>1 X HDMI Femelle 1 X VGA (D-sub 15 Femelle)</td>
+					</tr>
+					<tr>
+						<td>Entrée audio</td>
+						<td>Aucun(e)</td>
+					</tr>
+					<tr>
+						<td>Sorties audio</td>
+						<td>1 X Line OUT (Jack 3.5mm Femelle)</td>
+					</tr>
+            </table>
+            </div>
+            
+            <div class="table-carac">
+            <h3>
+                Multimédia
+            </h3>
+            <table>
+					<tr>
+						<td>H.P. Intégrés</td>
+						<td>Non</td>
+					</tr>
+					<tr>
+						<td>Webcam</td>
+						<td>Non</td>
+					<tr>
+					<tr>
+						<td>Tuner TV</td>
+						<td>Non</td>
+					</tr>
+            </table>
+            </div>
+        
+            <div class="table-carac">
+            <h3>
+                Caractéristiques physiques
+            </h3>
+            <table>
+					<tr>
+						<td>Couleur</td>
+						<td>Noir</td>
+					</tr>
+					<tr>
+						<td>Largeur</td>
+						<td>540.1 mm</td>
+					</tr>
+					<tr>
+						<td>Hauteur</td>
+						<td>417.4 mm</td>
+					</tr>
+					<tr>
+						<td>Profondeur</td>
+						<td>186.8 mm</td>
+					</tr>
+					<tr>
+						<td>Poids</td>
+						<td>2.48 kg</td>
+					</tr>
+					<tr>
+						<td>Pack multi-écrans</td>
+						<td>Non</td>
+					</tr>
+            </table>
+            </div>
+            
+            <div class="table-carac">
+            <h3>
+                Alimentation
+            </h3>
+            <table>
+					<tr>
+						<td>Consommation</td>
+						<td>25 W</td>
+					</tr>
+					<tr>
+						<td>Consommation en veille</td>
+						<td>0.5 W</td>
+					</tr>
+					<tr>
+						<td>Alimentation interne</td>
+						<td>Non</td>
+					</tr>
+            </table>
+            </div>
+        
+    </main>
+    
+    <footer class="footer">
+     </footer>
+</html>
